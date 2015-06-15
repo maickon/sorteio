@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Um site de sorteio">
+    <meta name="author" content="Maickon Rangel">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>SortMoney</title>
+
+
+    <!-- Index.css CSS -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/cont_menu.css" rel="stylesheet">
+
+     <!-- Index.js JAVASCRIPT -->
+    <script src="js/index.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Glyphsearch icons CSS -->
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.css">
+    <link rel="stylesheet" href="bower_components/icomoon/dist/css/style.css">
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="sobre.html">sobre</a></li>
+            <li role="presentation" class="active"><a href="dados.html">Dados</a></li>
+          </ul>
+        </nav>
+
+        <h3 class="text-muted"><p id="hora"></p>
+          <h6 id="data"></h6></h3>
+      </div>
+
+    <div class="jumbotron">
+    
+    <h1>Rolador de dados</h1>
+    
+    <input type="text" class="form-control" readonly id="campo" name="campo" />
+    <div id="config">
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-4">
+          <a href="#">
+            <img src="dados-icon/d4.png" onclick="rolar('d4');" class="roll">
+          </a>
+        </div>
+
+        <div class="col-lg-4">
+          <a href="#" class="roll_link">
+            <img src="dados-icon/d6.png" onclick="rolar('d6');" class="roll">
+          </a>
+        </div>
+
+        <div class="col-lg-4">
+          <a href="#" class="roll_link">
+            <img src="dados-icon/d8.png" onclick="rolar('d8');" class="roll">
+          </a>
+        </div>
+
+      </div>
+      <br>
+      <br>
+      <div class="row">
+
+        <div class="col-lg-4">
+          <a href="#" class="roll_link">
+            <img src="dados-icon/d10.png" onclick="rolar('d10');" class="roll">
+          </a>
+        </div>
+
+        <div class="col-lg-4">
+          <a href="#" class="roll_link">
+            <img src="dados-icon/d12.png" onclick="rolar('d12');" class="roll">
+          </a>
+        </div>
+
+        <div class="col-lg-4">
+          <a href="#" class="roll_link">
+            <img src="dados-icon/d20.png" onclick="rolar('d20');" class="roll">
+          </a>
+        </div>
+
+      </div>
+      <br>
+       <div class="row">
+        <span id="dado_rolado"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div id="counter">
+        <span>Visitantes</span>
+        <br/>
+        <script type="text/javascript" src="http://counter9.bestfreecounterstat.com/private/countertab.js?c=cb2fff765b8fc08bd6090b342fa50df5"></script>
+      </div>
+    </div>
+  </div>  
+  <footer class="footer">
+    <p>&copy; Company 2015 - Produzido por <a href="http://mrcurriculo.orgfree.com" title="Maickon Rangel">Maickon Rangel</a></p>
+  </footer>
+
+</div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
