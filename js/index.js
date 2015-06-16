@@ -128,3 +128,13 @@ function rolar(name){
 	document.getElementById("dado_rolado").innerHTML = "Você rolou o "+name;
 	document.getElementById("campo").className = "null";
 }
+
+function bt_prosseguir(){
+	if(document.getElementById("checkbox").checked == false){
+		alert('Você precisa concordar com os termos do sorteio para prosseguir.');
+		document.getElementById("exampleModal").id = "esconder";
+		return 0;
+	}else{
+		document.getElementById("esconder").id = "exampleModal";
+	}
+}

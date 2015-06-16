@@ -18,6 +18,16 @@
 	border-color: #918AB1;
 }
 
+#bt-prosseguir{
+	background-color: #918AB1;
+	border-color: #918AB1;
+}
+
+#bt-participar{
+	background-color: #918AB1;
+	border-color: #918AB1;
+}
+
 /* max-width */ 
 @media screen and (max-width: 528px){ 
 	#bt-sorteio{ 
@@ -28,7 +38,7 @@
 	}
 }
 
-#bt-sorteio:hover, #bt-salvar:hover{
+#bt-sorteio:hover, #bt-salvar:hover, #bt-prosseguir:hover, #bt-participar:hover{
 	background-color: #918ACA;
 	border-color: #918ACA;
 }
