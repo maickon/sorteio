@@ -53,11 +53,18 @@ class Arquivo{
 		$this->conteudo = fwrite($this->ponteiro, $write);
 	}
 
-	function read_file(){
+	function read_file($show = false){
 		while(!feof($this->ponteiro)):
-			$linha = fgets($this->ponteiro, 4096);
-			echo ($linha).'';
+			if($show):
+				$linha .= fgets($this->ponteiro, 4096);
+			else:
+				$linha = fgets($this->ponteiro, 4096);
+				echo ($linha).'';
+			endif;
 		endwhile;
+		if($show)
+			return $linha;
+
 		$this->close_file();
 	}
 

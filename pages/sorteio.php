@@ -7,9 +7,8 @@
     
     <div id="config">
         <h2>Configuração</h2>
-
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <a href="#">
                     <div class="glyphicon glyphicon-sort-by-alphabet" onclick="sorteio_palavras();">Sortear Nomes</div>
                 </a>
@@ -17,7 +16,8 @@
                 <textarea class="form-control" id="nomes" rows="10" placeholder="Digite um nome aqui. Se for mais de um, dê ENTER para separa os nomes."></textarea>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-12">
+                <br />
                 <a href="#">
                     <div class="glyphicon glyphicon-sort-by-order" onclick="sorteio_numeral();">Sortear Números</div>
                 </a>

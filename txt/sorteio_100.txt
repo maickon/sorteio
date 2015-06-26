@@ -1,6 +1,6 @@
 
 <h3>Sorteio R$ 100,00 </h3>
-<p>Este é um sorteio básico, a premiação final é de R$ 100,00 para o vencedor do sorteio. Basta você efetuar a taxa de pagamento de R$ 5,00 e estará participando deste sorteio. O interessante deste primeiro sorteio é que a quantidade mínima para inicializa-lo é apenas o cadastro de 20 pessoas. Dessa forma teremos o valor final para a premiação do sorteio. 
+<p>Este é um sorteio básico, a premiação final é de R$ 100,00 para o vencedor do sorteio. Basta você efetuar a taxa de pagamento de R$ 5,00 e estará participando deste sorteio. O interessante deste primeiro sorteio é que a quantidade mínima para inicializa-lo é apenas o cadastro de 20 pessoas com pagamento confirmado. Dessa forma teremos o valor final para a premiação do sorteio. 
 </p>
 <p>
 Quando a quantidade mínima de participante for alcançada, o sorteio será sancionado no quinto dia útil após suceder a quantidade mínima. O horário será informado aqui junto com o nome do vencedor para a visualização dos demais participantes. 

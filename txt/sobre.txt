@@ -1,0 +1,14 @@
+<h1 class="blog-title">Sorteio</h1>
+<p class="lead blog-description">
+	Seu site oficial para sortear números, listas de palavras e premiações. 
+	Este site foi feito para realização de sorteio, você pode utiliza-lo para fazer seus próprios sorteios ou simplesmente participar dos sorteios que o próprio site realiza. Os sorteios poderão ser feitos sobre um intervalo entre número inteiros ou sobre uma lista de nomes. 
+</p>
+
+<p>
+Os sorteios que este site proporciona são baseados no sorteio de nomes, os participantes preenchem a lista que será sorteada no dia marcado conforme as regras do sorteio.
+</p>
+
+<p>
+	Qualquer pessoa é livre para entrar em contato e tirar suas dúvidas. Segue o endereço de nosso email abaixo: 
+	<br /><a href="#">E-mail: sorteios.com.br@gmail.com</a>
+</p>

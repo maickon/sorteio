@@ -10,7 +10,7 @@
   <nav>
     <ul class="nav nav-pills pull-right">
       <li role="presentation" <?php link_ativo('home'); ?> ><a href="index.php?p=home">Home</a></li>
-      <li role="presentation" <?php link_ativo('sorteio'); ?> ><a href="?p=sorteio">Sorteio</a></li>
+      <li role="presentation" <?php link_ativo('inscritos'); ?> ><a href="?p=inscritos">Inscritos</a></li>
       <li role="presentation" <?php link_ativo('sobre'); ?> ><a href="?p=sobre">sobre</a></li>
       <li role="presentation" <?php link_ativo('dados'); ?> ><a href="?p=dados">Dados</a></li>
     </ul>

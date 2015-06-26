@@ -29,7 +29,7 @@ function sorteio_numeral(){
 }
 
 function sorteio_palavras(){
-	var c = document.getElementById('campo');
+	var c = document.getElementById('campo');	
 	var nomes = document.getElementById('nomes').value;
 	if(nomes == '' || nomes == 'undefined' || nomes == null){
 		alert("Preencha uma lista de nomes por favor.");

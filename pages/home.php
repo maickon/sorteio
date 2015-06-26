@@ -18,10 +18,10 @@ $(document).ready(function(){
 <body>
 <div class="bs-example">
     <ul class="nav nav-tabs" id="myTab">
-        <li class="active"><a href="#sectionA">Participar</a></li>
+        <li class="active"><a href="#sectionA">Como participar</a></li>
         <li><a href="#sectionB">Sorteio Livre</a></li>
         <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Sorteios <b class="caret"></b></a>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Tipos de Sorteio <b class="caret"></b></a>
             <ul class="dropdown-menu">
                 <li><a href="#dropdown1">Sorteio de R$ 100,00</a></li>
                 <li><a href="#dropdown2">Sorteio de R$ 1000,00</a></li>
@@ -30,7 +30,7 @@ $(document).ready(function(){
     </ul>
     <div class="tab-content">
         <div id="sectionA" class="tab-pane fade in active">
-            <?php require_once 'home_aba_1.php'; ?>
+            <?php require_once 'como_participar.php'; ?>
         </div>
         <div id="sectionB" class="tab-pane fade">
            <?php require_once 'sorteio.php'; ?>
@@ -42,7 +42,7 @@ $(document).ready(function(){
                     $arquivo->read_file();  
                 ?>
             </p>
-             <form method="post" action="?p=home">
+             <form method="post" action="?p=cadastro">
                 <input name="itemDescription1" type="hidden" value="Sorteio de R$ 100,00">  
                 <input name="itemAmount1" type="hidden" value="5.00">
                 <input alt="Pague com PagSeguro" name="submit" type="submit" class="btn btn-primary" id="bt-participar" value="Participar" />
@@ -54,11 +54,11 @@ $(document).ready(function(){
                     $arquivo->read_file();  
                 ?>
             </p>
-            <form method="post" action="?p=home">
+            <form method="post" action="?p=cadastro">
                 <input name="itemDescription1" type="hidden" value="Sorteio de R$ 1000,00">  
                 <input name="itemAmount1" type="hidden" value="10.00">
                 <input alt="Pague com PagSeguro" name="submit" type="submit" class="btn btn-primary" id="bt-participar" value="Participar" />
             </form>
-        </div>
+        </div>        
     </div>
 </div>

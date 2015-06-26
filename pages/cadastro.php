@@ -29,19 +29,6 @@ $arquivo->open_file('txt/termos.txt','r');
 				<br>
 				<input type="button" class="btn btn-lg" id="bt-prosseguir" role="button" onclick="bt_prosseguir();" value="Prosseguir" name="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" />
 			</div>
-
-			<?php
-			if($_POST['cadastro']):
-				$arquivo_3 = new Arquivo();
-				$arquivo_3->open_file('txt/participantes.txt','a');
-				$participante = $_POST['senderName'].' '.$_POST['senderPhone'].' '.$_POST['senderEmail'] .' '.$_POST['senderFacebook'];
-				if($arquivo_3->write_file($participante)):
-					echo '<div class="alert alert-success" role="alert">Dados salvos! Pressione o botão pagar para que seja direcionado so site do page seguro.</div>';
-				else:
-					echo '<div class="alert alert-danger" role="alert">Seus dados não foram salvos. Não prossiga o processo. Informe este erro pelo contato por favor.</div>';
-				endif;
-			endif;
-			?>
 		</div>
 	</div>
 </div>
@@ -55,11 +42,17 @@ $arquivo->open_file('txt/termos.txt','r');
       		</div>
 
       		<div class="modal-body">
-
-				<form method="post">
+      			<!-- https://pagseguro.uol.com.br/v2/checkout/payment.html 	-->
+				<form method="post" target="pagseguro" action="?p=contratacao">  
 					<!-- Dados do comprador (opcionais) --> 
-					<span>Nome</span>
-					<input name="senderName" id="input_name" class="form-control" type="text" required value="">  
+					<script type="text/javaScript">
+						function noSpace(v){
+							v = v.replace(/[\s\t\n]/g, "");
+							return v;
+						}
+					</script>
+					<span>Nome (sem espaços)</span>
+					<input name="senderName" id="input_name" onkeyup="this.value = noSpace( this.value )" class="form-control" type="text" required value="">  
 					<input name="senderAreaCode" class="form-control" type="hidden" value="11">  
 					<span>Telefone</span>
 					<input name="senderPhone" id="input_phone" class="form-control" type="tel" value="">
@@ -67,15 +60,7 @@ $arquivo->open_file('txt/termos.txt','r');
 					<input name="senderEmail" id="input_mail" class="form-control" type="email" required value="">
 					<span>Facebook</span>  
 					<input name="senderFacebook" id="input_facebook" class="form-control" type="text" required value="">  
-					
-					<div class="modal-footer">
-						<!-- submit do form (obrigatório) -->  
-						<input alt="Pague com PagSeguro" name="cadastro" value="Cadastrar-se" type="submit" class="btn btn-primary" id="bt-participar" />  
-					</div>
-				</form>
 
-								<!-- Declaração do formulário -->  
-				<form method="post" target="pagseguro" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">  
 					<!-- Campos obrigatórios -->  
 					<input name="receiverEmail" type="hidden" value="maickon4developers@gmail.com">  
 					<input name="currency" type="hidden" value="BRL">  
@@ -89,7 +74,8 @@ $arquivo->open_file('txt/termos.txt','r');
 
 					<!-- Código de referência do pagamento no seu sistema (opcional) -->  
 					<input name="reference" type="hidden" value="REF1234">  
-					
+					<br />
+					<div class="alert alert-warning" role="alert">Após clicar no botão Pagar uma nova aba abrirá no seu navegador. Acesse-a por favor.</div>
 					<div class="modal-footer">
 						<!-- submit do form (obrigatório) -->  
 						<input alt="Pague com PagSeguro" name="submit" value="Pagar" type="submit" class="btn btn-primary" id="bt-participar" />  

@@ -1,0 +1,15 @@
+<p>
+Para participar de um sorteio, basta você selecionar o tipo de sorteio que deseja participar conforme as opções disponíveis, aceitar o acordo de termos e preencher os seus dados. Ao preencher os seus dados, o seu nome estará prestes a entrar na lista de participantes. Somente após a efetivação do seu pagamento o seu nome estará na lista de participantes ativos.
+</p>
+
+<p>
+A realização de um sorteio só terá início quando o número mínimo de participantes forem alcançados, Ex: Num sorteio de R$ 100,00 com uma taxa de custo de participação de R$ 5,00 serão necessário o número mínimo de 20 participantes para chegarmos ao valor da premiação do sorteio. Uma vez alcançado o número mínimo de participantes o sorteio ainda aceitará novos participantes pelos próximos 5 dias úteis. 
+</p>
+
+<p>
+Uma vez encerrado os 5 dias úteis o sorteio será realizado no horário combinado. Através dos dados do participante como: email, facebook e telefone tentaremos entrar em contato para fazermos a premiação ao vencedor.
+</p>
+
+<p>
+Em caso de não conseguirmos entrar em contato com o vencedor, o mesmo terá até 10 dias para recorrer a sua premiação. Em caso de estouro de prazo para o contato durante estes 10 dias, este mesmo sorteio ficará em aberto por mais 5 dias novamente e após os 5 dias haverá um novo sorteio para definir um novo vencedor. Este processo se repetirá indefinidamente caso os vencedores não respondam o nosso contato.
+</p>
